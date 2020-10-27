@@ -8,6 +8,7 @@
   --size: 30;
   --ease: cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
+
 body {
   margin: 0 auto;
   font-family: 'Source Sans Pro', sans-serif;
@@ -18,7 +19,15 @@ body {
   -moz-background-size: cover;
  -o-background-size: cover;
   background-size: no repeat,cover;  
+  display: block;
 }
+
+
+
+
+
+
+
 
 h1 {
   --low: 20%;
@@ -259,15 +268,20 @@ h1::before {
   }
 
   .container{
-    height: 100vh;
-    background: url(../img/brian-mcgowan-I0fDR8xtApA-unsplash.jpg);
+    height: 120vh;
+    background: url(../img/spacex-6SbFGnQTE8s-unsplash.png);
     background-size: no-repeat,cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
    -o-background-size: cover;
-   width: 100%;
+   width: 95%;
   place-items: center;
   margin-top:auto;
+  margin: auto;
+ 
+
+ 
+  
   
   }
 
@@ -359,7 +373,10 @@ h1::before {
   .container ul li a:hover {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     text-decoration:none;
+    
   }
+
+  
   
   .container ul li a .fa {
     width: 100%;
@@ -495,7 +512,7 @@ h1::before {
     transition: transform var(--d) var(--e);
     transition: transform var(--d) var(--e), -webkit-transform var(--d) var(--e);
     z-index: 1;
-     max-width: 75ch;
+     max-width: 45ch;
   }
   .content > * + * {
     margin-top: 1rem;
