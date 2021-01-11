@@ -1,7 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200;400;700&family=Raleway:wght@400;700&display=swap");
+
+/*font-family: "Karla", sans-serif;
+font-family: "Raleway", sans-serif;
+*/
+
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 header {
-  font-family: "Oswald", sans-serif;
   width: 100%;
-  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -10,12 +27,11 @@ header {
   background-image: url(/img/altinay-dinc-LluELtL5mK4-unsplash.jpg);
 }
 
-header nav {
+header .mobile {
   width: 80%;
   margin: 0 auto;
 }
-
-header .inner-nav {
+header .inner-navMobile {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,17 +44,16 @@ header .inner-nav {
   width: 100%;
   padding-top: 2rem;
 }
-
 header .logo {
   z-index: 1;
 }
 
 header .logo a {
-  font-family: "Oswald", sans-serif;
+  font-family: "karla", sans-serif;
   text-transform: uppercase;
   color: #de6600;
   font-size: 1.8rem;
-  letter-spacing: 0.063rem;
+  letter-spacing: 0.393rem;
   text-decoration: none;
 }
 
@@ -49,7 +64,7 @@ header .hamburger {
 }
 
 header .hamburger span {
-  height: 0.25rem;
+  height: 0.15rem;
   background: #de6600;
   display: block;
   border: none;
@@ -63,6 +78,10 @@ header .hamburger span:nth-child(1) {
 
 header .hamburger span:nth-child(2) {
   margin-bottom: 0.313rem;
+}
+
+header .hamburger p {
+  margin-top: 8px;
 }
 
 header .open span:nth-child(1) {
@@ -82,7 +101,6 @@ header .open span:nth-child(3) {
   -webkit-transform: rotate(-45deg) translate(0.25rem, -0.375rem);
   transform: rotate(-45deg) translate(0.25rem, -0.375rem);
 }
-
 header .menu {
   position: fixed;
   top: 0;
@@ -173,5 +191,52 @@ header .menu ul a {
   font-size: 12px;
   text-align: center;
 }
+.desktop {
+  display: none;
+}
+
 @media screen and (min-width: 812px) {
+  .mobile {
+    display: none;
+  }
+  header {
+    height: 6.25rem;
+    display: flex;
+    background-image: url(/img/altinay-dinc-LluELtL5mK4-unsplash.jpg);
+  }
+  header .desktop {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-self: center;
+  }
+  .menudesktop ul li {
+    display: inline-block;
+    padding: 8px;
+  }
+  header .menudesktop ul a {
+    text-decoration: none;
+    color: #806c48;
+    font-weight: 700;
+    border-bottom: 0.125rem solid #de6600;
+    padding-bottom: 0.313rem;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+
+  header .menudesktop ul a:hover {
+    color: #de6600;
+    font-weight: 700;
+    padding: 16px;
+  }
+}
+.home {
+  max-width: 100%;
+  object-fit: cover;
+  margin: auto;
+  background-image: url(/img/altinay-dinc-LluELtL5mK4-unsplash.jpg);
+  height: 100vh;
+  min-height: 100vh;
 }
